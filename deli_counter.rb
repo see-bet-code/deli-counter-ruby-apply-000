@@ -10,8 +10,12 @@ def line(katz_deli)
   end
 end
 
-def take_a_number(array, string)
-  line(array)
+def take_a_number(katz_deli, name)
+  if (name != "") || (name != nil)
+    katz_deli.push(name)
+    puts "Welcome, #{name}. You are number #{katz_deli.index(name) + 1} in line."
+  else
+    puts "There is no one who needs a number."
 end
 
 def now_serving
