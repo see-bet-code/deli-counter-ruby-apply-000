@@ -16,6 +16,7 @@ def take_a_number(katz_deli, name)
     puts "Welcome, #{name}. You are number #{katz_deli.index(name) + 1} in line."
   else
     puts "There is no one who needs a number."
+  end
 end
 
 def now_serving
